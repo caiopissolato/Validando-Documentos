@@ -1,8 +1,6 @@
-from cpf_cnpj import CpfCnpj
+from cpf_cnpj import Documento
 
-cpf1 = CpfCnpj("70095189807", "cpf")
-#print(cpf1)
-cnpj1 = "35379838000112"
+cpf  = Documento.cria_documento("70095189807")
+cnpj = Documento.cria_documento("35379838000112")
 
-documento = CpfCnpj(cnpj1, "cnpj")
-print(documento,"\n",cpf1)
+print(cnpj,"\n",cpf)
